@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #495057;
+        line-height: 1;
+      }
+      .main-box {
+        border: 5px solid gray;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        font-size: larger;
+      }
+      .icon {
+        height: 24px;
+        width: 24px;
+      }
+
+      .small-box {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-column: auto;
+        column-gap: 20px;
+        margin-bottom: 15px;
+        border-top: 5px solid salmon;
+      }
+      .hidden {
+        display: none;
+      }
+      .hidden.open {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-box">
+      <div class="item">
+        <div class="small-box">
+          <p>Miracle no dey tire Jesus</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+          <div class="hidden">
+            <ul>
+              <li>Don't do pass yourself</li>
+              <li>Trust in God</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="small-box one">
+          <p>Miracle no dey tire Jesus</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m19.5 8.25-7.5 7.5-7.5-7.5"
+            />
+          </svg>
+          <div class="hidden">
+            <ul>
+              <li>Don't do pass yourself</li>
+              <li>Trust in God</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let accordions = document.querySelectorAll('.small-box');
+      for (let accordion of accordions) {
+        accordion.addEventListener('click', function (e) {
+          let hiddenContent = accordion.querySelector('.hidden');
+          if (hiddenContent) {
+            hiddenContent.classList.toggle('open');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

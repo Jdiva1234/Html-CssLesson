@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #495057;
+        line-height: 1;
+      }
+      .body {
+        width: 800px;
+        margin: 100px auto;
+        border-radius: 8px;
+        padding: 32px 48px 32px 86px;
+        display: flex;
+        align-items: center;
+      }
+      .number {
+        display: flex;
+        flex-direction: row;
+        gap: 35px;
+      }
+
+      .btn {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #087f5b;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        padding: 8px;
+      }
+      .btn--left {
+        margin-right: 30px;
+      }
+
+      .btn--right {
+        margin-left: 30px;
+      }
+      .icon {
+        stroke: #087f5b;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      .pagelink:hover {
+        background-color: #087f5b;
+        color: #fff;
+        padding: 5px;
+        border: 2px solid #087f5b;
+        border-radius: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="body">
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+        <a href="#" class="pagelink"></a>
+      </button>
+      <div class="number">
+        <a href="#" class="pagelink">1</a>
+        <a href="#" class="pagelink">2</a>
+        <a href="#" class="pagelink">3</a>
+        <a href="#" class="pagelink">4</a>
+        <a href="#" class="pagelink">5</a>
+        <a href="#" class="pagelink">6</a>
+        <span class="dots" class="pagelink">....</span>
+        <a href="#" class="pagelink">23</a>
+      </div>
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m8.25 4.5 7.5 7.5-7.5 7.5"
+          />
+        </svg>
+        <a href="#" class="link"></a>
+      </button>
+    </div>
+  </body>
+</html>
