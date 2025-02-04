@@ -1,14 +1,18 @@
 {
   "folders": [
-	{
-		"name": "06-Components",
-		"path": ".."
-	},
-	{
-		"name": "05-Design copy",
-		"path": "../../../../../Desktop/05-Design copy"
-	}
-],
+    {
+      "name": "06-Components",
+      "path": ".."
+    },
+    {
+      "name": "07-Omnifood-Desktop",
+      "path": "../../07-Omnifood-Desktop"
+    },
+    {
+      "name": "05-Design copy",
+      "path": "../../../../../Desktop/05-Design copy"
+    }
+  ],
   "settings": {
     "liveServer.settings.multiRootWorkspaceName": "06-Components"
   }
