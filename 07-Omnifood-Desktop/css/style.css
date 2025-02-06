@@ -19,6 +19,7 @@ Primary; #e67e22
 - Shades:
 - Accents: 
 - Greys : #555
+- Darker Grey: #333
 
 --05 Shadows 
 --06 Border-radius 
@@ -46,6 +47,18 @@ body {
   margin: 0 auto;
 }
 
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #333;
+  letter-spacing: -0.5;
+}
 .hero-img {
   width: 100%;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
 }
