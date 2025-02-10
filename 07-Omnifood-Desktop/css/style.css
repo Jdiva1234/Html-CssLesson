@@ -22,7 +22,8 @@ Primary; #e67e22
 - Darker Grey: #333
 
 --05 Shadows 
---06 Border-radius 
+--06 Border-radius  - 
+default -  5px
 --07 Whitespace
 */
 
@@ -38,47 +39,65 @@ body {
   font-weight: 400;
   color: #555;
 }
-
-.section-hero {
-  background-color: #fdf2e9;
-  padding: 8rem 1rem;
+.logo {
+  height: 1rem;
 }
 
-.hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 90rem;
-  margin: 0 auto;
-  gap: 6.4rem;
+/* ******** */
+/* Navigation */
+/* ********** */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
   align-items: center;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s;
 }
 
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+/* General Reusable Components */
 .heading-primary {
-  font-size: 3.6rem;
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.05;
   color: #333;
   letter-spacing: -0.5px;
   margin-bottom: 3.2rem;
 }
-.hero-img {
-  width: 100%;
-}
-
-.hero-description {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  margin-bottom: 1.6rem;
-}
 
 .btn:link,
 .btn:visited {
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
-  padding: 1.2rem 2.4rem;
-  border-radius: 9px;
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
   /* transition of colors between buttons */
   transition: background-color 0.3s;
 }
@@ -107,9 +126,48 @@ body {
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
 }
+/***************** */
+/* Header
+/*********** */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  /* Because we want it to be sticky later */
+  height: 9.6rem;
+  padding: 0 3.8rem;
+}
+
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 1rem 1rem 1.2rem 1rem;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
 
 .margin-right-sm {
-  margin-right: 1.6rem !important;
+  margin-right: 1rem !important;
 }
 
 .delivered-meals {
@@ -124,22 +182,57 @@ body {
 }
 
 .delivered-imgs img {
-  height: 3.6rem;
-  width: 3.6rem;
+  height: 2.3rem;
+  width: 2.3rem;
   border-radius: 50%;
-  margin-right: -1.6rem;
-  border: 3px solid #fdf2e9;
+  margin-right: -1rem;
+  border: 2px solid #fdf2e9;
 }
 
 .delivered-imgs img:last-child {
   margin: 0;
 }
 .delivered-text {
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
 .delivered-text span {
   color: #cf711f;
   font-weight: 700;
+}
+
+/***************** */
+/*  HOW IT WORKS SECTION
+/*********** */
+
+.section-how {
+  padding: 9.6px 0;
+  background-color: orangered;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.section-how div {
+  padding: 100px;
+  font-size: 50px;
+}
+.section-how div:nth-child(1) {
+  background-color: aqua;
+}
+.section-how div:nth-child(2) {
+  background-color: blue;
+}
+.section-how div:nth-child(3) {
+  background-color: violet;
+}
+.section-how div:nth-child(4) {
+  background-color: yellow;
 }
