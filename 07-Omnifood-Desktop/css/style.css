@@ -86,15 +86,14 @@ body {
 /*********** */
 
 .section-how {
-  padding: 9.6px 0;
-  background-color: orangered;
+  padding: 2.4rem 2rem 2rem 2rem;
 }
 
 .container {
   /* 1140 px that are commonly used */
   max-width: 120rem;
   margin: 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 1.6rem 2.4rem;
 }
 .grid {
   display: grid;
@@ -105,16 +104,37 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.step-text-image {
+  width: 50%;
+}
 /* General Reusable Components */
-.heading-primary {
-  font-size: 3.6rem;
-  font-weight: 700;
-  line-height: 1.05;
+.heading-primary,
+.heading-secondary {
   color: #333;
   letter-spacing: -0.5px;
+  font-weight: 700;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
   margin-bottom: 3.2rem;
 }
 
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
 .btn:link,
 .btn:visited {
   display: inline-block;
