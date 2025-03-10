@@ -104,6 +104,9 @@ body {
 .grid--2--cols {
   grid-template-columns: repeat(2, 1fr);
 }
+.grid--3--cols {
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .grid--center-v {
   align-items: center;
@@ -124,7 +127,7 @@ body {
 }
 
 .heading-secondary {
-  font-size: 4.4rem;
+  font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }
@@ -179,4 +182,33 @@ body {
 
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+/***************** */
+/*  MEALS SECTION
+/*********** */
+
+.section-meals {
+  padding: 2.4rem 2rem 2rem 3.5rem;
+}
+
+.meal-img {
+  width: 100%;
+}
+
+.meal-title {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 3.2rem;
+}
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-attribute {
+  font-size: 1.8rem;
 }
