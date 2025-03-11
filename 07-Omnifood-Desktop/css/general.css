@@ -127,7 +127,7 @@ body {
 }
 
 .heading-secondary {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }
@@ -268,8 +268,8 @@ strong {
 }
 
 .testimonial-text {
-  font-size: 1rem;
-  line-height: 1;
+  font-size: 1.3rem;
+  line-height: 1.6;
   margin-bottom: 1.6rem;
 }
 .testimonial-name {
