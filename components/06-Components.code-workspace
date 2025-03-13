@@ -6,6 +6,9 @@
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "06-Components"
+    "liveServer.settings.multiRootWorkspaceName": "06-Components",
+    "prettier.requireConfig": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultColorDecorators": "always"
   }
 }
