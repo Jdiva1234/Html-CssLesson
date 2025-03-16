@@ -93,7 +93,7 @@ body {
   /* 1140 px that are commonly used */
   max-width: 120rem;
   margin: 0 auto;
-  padding: 1.6rem 2.4rem;
+  padding: 5.6rem 8rem;
 }
 .grid {
   display: grid;
@@ -114,6 +114,9 @@ body {
 
 .grid--4--cols {
   grid-template-columns: repeat(4, 1fr);
+}
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 .grid--center-v {
   align-items: center;
@@ -154,9 +157,12 @@ body {
   margin-bottom: 1.6rem;
   letter-spacing: 0.75px;
 }
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
+  border: none;
+  cursor: pointer;
   font-size: 1.2rem;
   font-weight: 600;
   text-decoration: none;
@@ -164,6 +170,7 @@ body {
   border-radius: 5px;
   /* transition of colors between buttons */
   transition: all 0.3s;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -191,6 +198,17 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.btn--form {
+  background-color: #45200a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
 /***************** */
 /*  MEALS SECTION
 /*********** */
@@ -254,6 +272,11 @@ strong {
   transition: all 0.3s;
 }
 
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 /***************** */
 /*  TESTIMONIALS SECTION
 /*********** */

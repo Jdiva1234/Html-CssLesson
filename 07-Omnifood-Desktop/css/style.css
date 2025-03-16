@@ -248,7 +248,6 @@
   grid-template-columns: 2fr 1fr;
   /* background-color: #e67e22; */
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
-  height: 50rem;
   border-radius: 11px;
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
@@ -290,16 +289,30 @@
   font-size: 1.6rem;
   font-weight: 600;
   margin-top: 1.2rem;
-  /* this inherits the font from the parent font */
-  font-family: inherit;
 }
 
-.cta-form input {
+.cta-form input,
+.cta-form select {
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   width: 100%;
   padding: 1.2rem;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  /* this inherits the font from the parent font */
+  font-family: inherit;
+  color: inherit;
 }
-.cta-form select {
+.cta-form input::placeholder {
+  color: #aaa;
 }
-.cta-form button {
+/* this is for accessibility */
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+.footer {
+  padding: 5.6rem 8rem;
 }
