@@ -240,7 +240,7 @@
 
 /* CTA SECTION */
 .section-cta {
-  padding: 5.6rem 8rem;
+  padding: 5.6rem 0 12.8rem 0;
 }
 
 .cta {
@@ -314,5 +314,67 @@
 }
 
 .footer {
-  padding: 5.6rem 8rem;
+  padding: 12.8rem 0;
+  border-top: 2px solid #eee;
+  margin-bottom: 8rem;
+}
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4.2rem;
+}
+
+.footer-navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+footer-link:active {
+  color: #555;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1rem;
+  color: #767676;
+  line-height: 1.6;
+  margin-top: 4rem;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+.address {
+  margin-bottom: 2.4rem;
 }
