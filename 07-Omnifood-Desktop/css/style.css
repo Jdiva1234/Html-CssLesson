@@ -11,6 +11,7 @@
   /* Because we want it to be sticky later */
   height: 9.6rem;
   padding: 0 3.8rem;
+  position: relative;
 }
 
 .section-hero {

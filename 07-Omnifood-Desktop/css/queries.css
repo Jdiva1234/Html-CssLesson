@@ -49,11 +49,7 @@
   }
 
   .main-nav-list {
-<<<<<<< HEAD
     gap: 2rem;
-=======
-    gap: 3.2rem;
->>>>>>> c177f299d4f7d78d1db0c5cb5a30d8bec94de8d5
   }
 
   .hero {
@@ -61,7 +57,6 @@
   }
 
   .testimonials-container {
-<<<<<<< HEAD
     padding: 9.6rem 2rem;
   }
 }
@@ -146,7 +141,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in-out;
 
     /* Hide navigation */
     /* Allows NO transitions at all */
@@ -204,7 +199,7 @@
   }
 
   .heading-secondary {
-    margin-bottom: 4.8rem;
+    margin-bottom: 3.8rem;
   }
 
   .pricing-plan {
@@ -296,8 +291,7 @@
   .cta-img-box {
     height: 32rem;
     grid-row: 1;
-=======
+
     padding: 9.6rem 3.2rem;
->>>>>>> c177f299d4f7d78d1db0c5cb5a30d8bec94de8d5
   }
 }
