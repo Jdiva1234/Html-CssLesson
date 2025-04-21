@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="OmniFood Meal Prep"
+      content="OmniFood is an AI generated meal planner designed to help simplify your cooking journey by making it easier and healthy."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +22,7 @@
     ></script>
     <link rel="stylesheet" href="css/queries.css" />
     <script defer src="./js/script.js"></script>
-    <title>OmniFood Project</title>
+    <title>OmniFood Project &mdash; Easy Meal Prep</title>
   </head>
   <body>
     <header class="header nav-open">
@@ -545,14 +549,20 @@
                 eating well today. You can cancel or pause anytime. And the
                 first meal is on us!
               </p>
-              <form class="cta-form" action="#">
+              <form class="cta-form" name="signUp" netlify>
                 <div>
                   <label for="full-name">Full Name</label>
-                  <input id="full-name" placeholder="John Doe" required />
+                  <input
+                    name="full-name"
+                    id="full-name"
+                    placeholder="John Doe"
+                    required
+                  />
                 </div>
                 <div>
                   <label for="email-address">Email address</label>
                   <input
+                    name="email-address"
                     id="email-address"
                     placeholder="johndoe@gmail.com"
                     required
@@ -560,7 +570,7 @@
                 </div>
                 <div>
                   <label for="select-where">Where did you hear from us?</label>
-                  <select id="select-where" required>
+                  <select name="select-where" id="select-where" required>
                     <option value="empty">Please choose an option</option>
                     <option value="friends">Friends and Family</option>
                     <option value="youtube">YouTube Video</option>
